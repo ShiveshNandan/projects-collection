@@ -16,7 +16,7 @@ export default function Home() {
       {projects.map((items:any,index:any) => (
 
 
-      <div style={{ backgroundImage: `url('./public/dice.png')` }} className={`flex border w-5/12 h-[40vh] bg-cover  m-5 flex-col justify-end`}>
+      <div style={{ backgroundImage: `url('./public/dice.png')` }} className={`flex border w-5/12 h-[40vh] bg-cover  m-5 flex-col justify-end`} key={index}>
         <div className="flex w-10/12 h-[20vh] bg-blue-100 ">
           <div className="flex flex-col justify-center w-1/5">
             <Link href={`${items.link}`}> <div className="flex justify-center my-1 border bg-pink-100 py-1 px-4 w-[5vw] text-sm rounded m-auto ">code</div> </Link>
